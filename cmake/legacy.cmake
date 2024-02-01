@@ -385,7 +385,8 @@ endif()
 # ######################################################################################################################
 
 if(${PropertyPrefix}OBS_NATIVE)
-  install_obs_plugin_with_data(${PROJECT_NAME} resources)
+  # install_obs_plugin_with_data(${PROJECT_NAME} resources)
+  setup_plugin_target(${PROJECT_NAME} resources)
 else()
   install(
     TARGETS ${PROJECT_NAME}
